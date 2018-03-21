@@ -1,1 +1,33 @@
 /* PHASE 11: Icons */
+a[class*="icon-"]{
+  display: inline-block;
+  background-image: url(".././images/sprite.png");
+  background-size: 25px 250px;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+
+}
+
+a[class*="icon-"]:hover{
+  text-decoration: none;
+  background-color: white;
+}
+
+.icon-wall {
+  background-position: 0px -223px;
+}
+
+.icon-about {
+  background-position: 0px -173px;
+}
+.icon-star {
+  background-position: 0px -148px;
+}
+.icon-photo {
+  background-position: 0px -198px;
+}
+
+.post-footer-tools .icon-comment{
+  background-position: 0px 0px;
+  height: 28PX;
+}
