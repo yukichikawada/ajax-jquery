@@ -11,4 +11,5 @@ module.exports = {
     devtoolFallbackModuleFilenameTemplate: '[resourcePath]?[hash]'
   },
   devtool: 'source-map',
+  mode: 'development'
 };
