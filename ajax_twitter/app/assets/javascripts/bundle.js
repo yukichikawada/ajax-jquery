@@ -130,6 +130,7 @@ module.exports = FollowToggle;
 /***/ (function(module, exports, __webpack_require__) {
 
 const FollowToggle = __webpack_require__(/*! ./follow_toggle */ "./frontend/follow_toggle.js");
+const UsersSearch = __webpack_require__(/*! ./users_search */ "./frontend/users_search.js");
 
 
 $(document).ready(() => {
@@ -139,7 +140,34 @@ $(document).ready(() => {
     new FollowToggle(button);
   });
 
+  $('.users-search').each((idx, search) => {
+    new UsersSearch(search);
+  });
+
 });
+
+
+/***/ }),
+
+/***/ "./frontend/users_search.js":
+/*!**********************************!*\
+  !*** ./frontend/users_search.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+class UsersSearch {
+  constructor(search) {
+    this.$search = $(search);
+
+    this.value = this.$search.val();
+    // debugger;
+    console.log(this.value);
+  }
+}
+
+
+module.exports = UsersSearch;
 
 
 /***/ })
